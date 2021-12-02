@@ -3,7 +3,5 @@ php:
   - 8.0
 services:
   - mysql
-before_install:
-  - mysql -e 'CREATE DATABASE /SQL/SQL.txt;'
 script: 
   - "phpunit $TRAVIS_BUILD_DIR/tests/StackoverflowTest.php"
