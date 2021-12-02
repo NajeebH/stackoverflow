@@ -3,5 +3,8 @@ php:
   - 8.0
 services:
   - mysql
+before_install:
+  - mysql -u root -e 'CREATE DATABASE test;'
+  - mysql -u root -e "CREATE USER 'root'@'localhost';"
 script: 
   - "phpunit $TRAVIS_BUILD_DIR/tests/StackoverflowTest.php"
