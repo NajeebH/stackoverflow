@@ -1,1 +1,1 @@
-{"version":1,"defects":{"Warning":6},"times":{"Warning":0.008}}
+{"version":1,"defects":{"Warning":6},"times":{"Warning":0.008,"StackoverflowTest::testConnection":0.156,"StackoverflowTest::testCreateUser":0.007,"StackoverflowTest::testUserCredentials":0.033,"StackoverflowTest::testUserPassword":0.018,"StackoverflowTest::testLogin":0.023,"StackoverflowTest::testAddQuestion":0.019,"StackoverflowTest::testGetQuestion":0.01,"StackoverflowTest::testAddAnswer":0.022,"StackoverflowTest::testGetAnswer":0.01,"StackoverflowTest::testAddVote":0.017}}
