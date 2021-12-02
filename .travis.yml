@@ -4,6 +4,6 @@ php:
 services:
   - mysql
 before_install:
-  - mysql -u root --password="" < SQL/SQL.txt 
+  - mysql -e 'CREATE DATABASE /SQL/SQL.txt;'
 script: 
   - "phpunit $TRAVIS_BUILD_DIR/tests/StackoverflowTest.php"
