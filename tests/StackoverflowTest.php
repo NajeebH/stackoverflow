@@ -23,6 +23,7 @@ class StackoverflowTest extends \PHPUnit\Framework\TestCase {
 
     public function testCreateUser(){
         //Verify if an account can be created
+        require_once('./php/getter.php');
         $users = getData("php/user/get/sql.txt");
         $lastUser = end($users);                         //get the array of the last user that was added
         
