@@ -60,4 +60,3 @@ create table QuestionTag (
     FOREIGN KEY (tagID) REFERENCES Tag(ID) ON DELETE CASCADE
 );
 
-insert into tag (name) values ('python'), ('php'), ('c++'), ('javascript'), ('sql')
