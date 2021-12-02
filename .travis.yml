@@ -5,6 +5,6 @@ services:
   - mysql
 before_script:
   - mysql -u root -e 'CREATE DATABASE test;'
-  - mysql -u root testbase < SQL/SQL.txt
+  - mysql -u root test < SQL/SQL.txt
 script: 
   - "phpunit $TRAVIS_BUILD_DIR/tests/StackoverflowTest.php"
